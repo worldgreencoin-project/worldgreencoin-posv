@@ -2242,12 +2242,9 @@ bool CBlock::AddToBlockIndex(CValidationState &state, const CDiskBlockPos &pos, 
 {
     // Check for duplicate
     uint256 hash = GetHash();
-    if (fDebug)
-        printf("AddToBlockIndex() : checking %s\n", hash.ToString().c_str());
-        
     if (mapBlockIndex.count(hash))
         return state.Invalid(error("AddToBlockIndex() : %s already exists", hash.ToString().c_str()));
-
+    
     // Construct new block index object
     CBlockIndex* pindexNew = new CBlockIndex(*this);
     assert(pindexNew);

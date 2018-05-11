@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.3.0.0
+!define VERSION 1.0.1.0
 !define COMPANY "WorldGreenCoin project"
 !define URL http://www.worldgreencoin.com/
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile worldgreencoin-1.3.0.0-win32-setup.exe
+OutFile worldgreencoin-1.0.1.0-win32-setup.exe
 InstallDir $PROGRAMFILES\WorldGreenCoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.3.0.0
+VIProductVersion 1.0.1.0
 VIAddVersionKey ProductName WorldGreenCoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
