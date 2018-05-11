@@ -89,7 +89,8 @@ set<pair<COutPoint, unsigned int> > setStakeSeenOrphan;
 static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeReset(~uint256(0) >> 32); // 1
 int64 nReserveBalance = 0;
-unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
+//unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
+unsigned int nStakeMinAge = 1 * 60; // 1 minute
 unsigned int nStakeMaxAge = 45 * 24 *  60 * 60; // 45 days
 extern enum Checkpoints::CPMode CheckpointsMode;
 
